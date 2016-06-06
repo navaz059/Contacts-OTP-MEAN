@@ -1,0 +1,12 @@
+<div class = "container">
+  <div class="jumbotron">
+    <h1 class = "text-center text-primary"><b>List of Messages Sent</b></h1>
+    <div>
+      <ul class = "list-group" ng-repeat="contact in HistoryContacts | orderBy: 'time'">
+        <div ng-if="contact.OTP!=''">
+        <li class="list-group-item">Name : {{contact.name}} <br> Number : {{contact.contact}} <br> OTP:{{contact.OTP}}<br>Time:{{contact.time}}</li>
+      </div>
+      </ul>
+    </div>
+  </div>
+<div>

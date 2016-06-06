@@ -1,0 +1,13 @@
+<div class = "container">
+ <div class="jumbotron">
+  <h1 class = "text-center text-primary"><b>CONTACTS APPLICATION</b></h1>
+  <h2 class = "text-center text-secondary">Click a Name to send OTP</h2>
+  <div>
+   <div ng-bind="hello"></div>
+   <ul class = "list-group" ng-repeat="contact in contacts">
+     <li class="list-group-item">
+      <button ng-click="showDetails($index)">{{contact.name}}</button></li>
+    </ul>
+  </div>
+</div>
+</div>
